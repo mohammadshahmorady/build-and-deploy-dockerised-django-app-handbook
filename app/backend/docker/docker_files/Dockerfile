@@ -5,7 +5,7 @@ ENV PYTHONUNBUFFERED 1
 ENV PYTHONDONTWRITEBYTECODE 1
 
 RUN mkdir /code
-COPY . /code/
+COPY requirements /code/requirements
 WORKDIR /code
 
 RUN set -e; \
